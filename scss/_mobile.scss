@@ -7,6 +7,14 @@
 
 // Desktops & laptops
 @include mediaLg {
+    .about-info {
+        grid-template-areas:
+            'bioimage bio'
+            'job1 job2'
+            'job3 job4';
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -59,7 +67,8 @@
             'bio'
             'job1'
             'job2'
-            'job3';
+            'job3'
+            'job4';
         grid-template-columns: 1fr;
     }
 
